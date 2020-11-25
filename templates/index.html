@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <style> 
+        #start {
+        width: 10em;  height: 4em;
+        background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body bgcolor="#B0E0E6">
+    <center>
+        <img src="{{url_for('face_video')}}" alt="unable to connect" height="80%" width="80%">
+        <br>
+        <br>
+        <form action="{{url_for('stop_video')}}">
+            <input type="submit" value='stop' name='btn' id="start">
+        </form>
+    </center>
+</body> 
+
+</html>
